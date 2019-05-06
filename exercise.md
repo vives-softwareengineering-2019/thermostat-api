@@ -10,7 +10,7 @@ All input and out should consist out of JSON objects.
 
 Make use of HTTP status codes to signal if a request is handled correctly (status code 200), of if anything went wrong (status code 400 and variants).
 
-A configuration file for the tool Insomnia is provided in the root of this project. [thermsotat_2019-05-06.json](thermsotat_2019-05-06.json)). The file will add some preconfigured HTTP request to Insomnia to help you develop this Thermostat API application.
+A configuration file for the tool [Insomnia](https://insomnia.rest/) is provided in the root of this project. [thermsotat_2019-05-06.json](thermsotat_2019-05-06.json)). The file will add some preconfigured HTTP request to Insomnia to help you develop this Thermostat API application.
 
 ## Sinatra
 
