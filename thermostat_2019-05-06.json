@@ -1,0 +1,223 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-05-06T13:22:13.599Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_81ac87cac23141c5bf1389b5da76506a",
+			"created": 1550608213660,
+			"description": "",
+			"modified": 1550608213660,
+			"name": "thermostat",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_045deb6d4baa4fec87208d744cf3bf61",
+			"color": null,
+			"created": 1550608213677,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1550608213677,
+			"modified": 1550608213677,
+			"name": "New Environment",
+			"parentId": "wrk_81ac87cac23141c5bf1389b5da76506a",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_a72d3d4632e143689b7c6c33619f4bed",
+			"cookies": [],
+			"created": 1550608213685,
+			"modified": 1550608213685,
+			"name": "Default Jar",
+			"parentId": "wrk_81ac87cac23141c5bf1389b5da76506a",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_ca685e4347934730a455389d31c17030",
+			"created": 1550609672896,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1550609672896,
+			"modified": 1550609672896,
+			"name": "bar",
+			"parentId": "wrk_81ac87cac23141c5bf1389b5da76506a",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_235f50d4576c49bda1ca57c19e4ee1a4",
+			"authentication": {},
+			"body": {},
+			"created": 1550608311268,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550609672946,
+			"method": "GET",
+			"modified": 1550609806340,
+			"name": "get all thermostats id's",
+			"parameters": [],
+			"parentId": "wrk_81ac87cac23141c5bf1389b5da76506a",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4567/thermostats",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c1cd6d0042a344748d54b24a2433f1ca",
+			"authentication": {},
+			"body": {},
+			"created": 1550608490654,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1550609540909.5,
+			"method": "GET",
+			"modified": 1557145958663,
+			"name": "get state",
+			"parameters": [],
+			"parentId": "fld_ca685e4347934730a455389d31c17030",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4567/thermostat",
+			"_type": "request"
+		},
+		{
+			"_id": "req_098c0d1da823415289f8514daa42fa37",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\"wanted\": 18.0, \"range\": 0.5}"
+			},
+			"created": 1550608527845,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_bf09bd43ef444829b446af74e9eac912",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1550609540859.5,
+			"method": "PUT",
+			"modified": 1557145948758,
+			"name": "create thermostat",
+			"parameters": [],
+			"parentId": "fld_ca685e4347934730a455389d31c17030",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4567/thermostat",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a0fdfaa82d5340be8206d35b5076fe80",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\"temperature\": 15.5}"
+			},
+			"created": 1550609623935,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4d5d7336451240a6be0f8fe54c583335",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1550609540759.5,
+			"method": "POST",
+			"modified": 1557147220241,
+			"name": "update (to cold)",
+			"parameters": [],
+			"parentId": "fld_ca685e4347934730a455389d31c17030",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4567/thermostat",
+			"_type": "request"
+		},
+		{
+			"_id": "req_366fbe725ab0482bbdf5f5d7a351781d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\"temperature\": 18.2}"
+			},
+			"created": 1550609710879,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4d5d7336451240a6be0f8fe54c583335",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1550609540709.5,
+			"method": "POST",
+			"modified": 1557148915047,
+			"name": "update (just fine)",
+			"parameters": [],
+			"parentId": "fld_ca685e4347934730a455389d31c17030",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4567/thermostat",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1cfffa8249e94b15b6c49bf46a3fc0d6",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\"temperature\": 23.7}"
+			},
+			"created": 1550609715047,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_4d5d7336451240a6be0f8fe54c583335",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1550609540659.5,
+			"method": "POST",
+			"modified": 1557148918586,
+			"name": "update (to hot)",
+			"parameters": [],
+			"parentId": "fld_ca685e4347934730a455389d31c17030",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:4567/thermostats",
+			"_type": "request"
+		}
+	]
+}
