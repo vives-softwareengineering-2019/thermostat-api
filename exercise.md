@@ -34,7 +34,7 @@ To manage packages and dependencies, a package manager is needed. The most popul
 ```shell
 bundle init
 bundle add sinatra
-bunlde add thermostat_FIRSTNAME_LASTNAME
+bundle add thermostat_FIRSTNAME_LASTNAME
 bundle install
 ```
 
@@ -53,7 +53,7 @@ require 'whatever-you-need'
 class MyApp < Sinatra::Base
 
   # add a setting 'foo', with the value of 'bar' to the Sinatra app. See: http://sinatrarb.com/configuration.html
-  set :foo = "bar"
+  set :foo, "bar"
 
   # before handling every route, set the 'content_type' to json (http header). See: http://sinatrarb.com/intro.html filters
   before do
