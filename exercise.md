@@ -71,13 +71,13 @@ class MyApp < Sinatra::Base
 
   # PUT route
   put '/demo' do
-    request.body.rewind       # body is an IO object, and should be rewinded befor reading
+    request.body.rewind       # body is an IO object, and should be rewinded before reading
     puts request.body.read
   end
 
   # POST route
   post '/demo' do
-    request.body.rewind       # body is an IO object, and should be rewinded befor reading
+    request.body.rewind       # body is an IO object, and should be rewinded before reading
     settings.bar = request.body.read
   end
 end
