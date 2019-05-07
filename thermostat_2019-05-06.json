@@ -96,7 +96,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\"wanted\": 18.0, \"range\": 0.5}"
+				"text": "{\"temperature\": 18.0, \"range\": 0.5}"
 			},
 			"created": 1550608527845,
 			"description": "",
